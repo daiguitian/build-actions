@@ -6,7 +6,7 @@
 
 
 # 后台IP设置
-export Ipv4_ipaddr="192.168.2.2"            # 修改openwrt后台地址(填0为关闭)
+export Ipv4_ipaddr="192.168.11.1"            # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
 export Op_name="OpenWrt-123"                # 修改主机名称为OpenWrt-123(填0为不作修改)
 
@@ -96,9 +96,9 @@ feeds.buildinfo
 sha256sums
 version.buildinfo
 profiles.json
-openwrt-x86-64-generic-kernel.bin
-openwrt-x86-64-generic.manifest
-openwrt-x86-64-generic-squashfs-rootfs.img.gz
+openwrt-aarch64-r2s-kernel.bin
+openwrt-aarch64-r2s.manifest
+openwrt-aarch64-r2s-squashfs-rootfs.img.gz
 EOF
 
 # 在线更新时，删除不想保留固件的某个文件，在EOF跟EOF之间加入删除代码，记住这里对应的是固件的文件路径，比如： rm -rf /etc/config/luci
