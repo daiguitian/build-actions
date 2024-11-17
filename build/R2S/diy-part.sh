@@ -66,7 +66,7 @@ export Cancel_running="0"                    # 取消路由器每天跑分任务
 
 
 # 晶晨CPU系列打包固件设置(不懂请看说明)
-export amlogic_model="s905d"
+export amlogic_model="rk3328"
 export amlogic_kernel="5.10.01_6.1.01"
 export auto_kernel="true"
 export rootfs_size="2560"
@@ -95,9 +95,7 @@ feeds.buildinfo
 sha256sums
 version.buildinfo
 profiles.json
-openwrt-x86-64-generic-kernel.bin
-openwrt-x86-64-generic.manifest
-openwrt-x86-64-generic-squashfs-rootfs.img.gz
+openwrt-rockchip-armv8-friendlyarm_nanopi-r2s.img.gz
 EOF
 
 # 在线更新时，删除不想保留固件的某个文件，在EOF跟EOF之间加入删除代码，记住这里对应的是固件的文件路径，比如： rm -rf /etc/config/luci
