@@ -9,7 +9,7 @@
 #
 #
 
-name: Immortalwrt_R2S
+name: R2S
 on:
   workflow_dispatch:
     inputs:
